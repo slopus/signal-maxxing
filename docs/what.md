@@ -1,11 +1,13 @@
 # Signal Maxxing — Specification
 
 What we are building?
-A swarm of agents to do extreamly costly deep research - it needs to go deeper, do more cross verifications, run experiments (if its code related for example). Look for inspiration online, 
+A swarm of agents to do extreamly costly deep research - it needs to go deeper, do more cross verifications, run experiments (if its code related for example).
 
-Example hard questions this system will need to be able to answer:
+"Magic is when you did an unreasonable ammount of work behind the scenes"
+
+Example hard questions this system will need to be able to answer (AND what you should be testing on)
 - "What were the core changes to the prompt in claude code in its history?"
-- "Create an architecture diagram of top agentic harnesses"
+- "Create an architecture diagram of top agentic harnesses, use vision models - agent-browser to verify MANY of times that the shit looks good and is not sloppy. KISS, honestly maybe use local tldraw / excalidraw or something so it looks good out of the box?"
 - "What are the most likely to succeed founders from the previous 2 batches of YC?"
 
 Inspired by - slopus/scale, paperclip, gstack, compound engineering, llm-wiki
@@ -71,8 +73,7 @@ orchestrator - which is always on (it should be run in a loop, and be killed and
 orchestrator is a combination of code that starts the mcp server for message bus management
 ACTUALLY the bus is just going to be a tree of files
 
-
-thre will be multiple
+I think we can use some file locking mechanism to avoid race conditions. Literally agents can create a <filename>.lock - and write time, who locked it before updating. Probably can have it be part of the cli or write a separate helper cli to atomically swap a file :D yea code is better for this.
 
 researcher template
 will have the research skills from bra1ndump repo

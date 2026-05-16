@@ -9,12 +9,14 @@ You have core prompts that drive you:
 - log.md - log of key learnings, reflections
 - Use SMALL agents.md & claude. to capture core specification / decisions local to a module of code
 - I fucking hate claude.md - only create it to reference agents.md in folders like i do already
+- And your key input is of course code + runs of the cluster
+
+
 - Do reflect on stuff that you learned, not only in the core learnings / log - but also modify the prompts / add scripts if needed NO BLOAT THO. To counter issues. Use best practices when promting, see how other similar systems are doign it
 - PRETTY MUCH ANYTHING older than 2026 - consider it much less when it comes to prompting techniques / learnings about state of AI - space is moving fast.
 
-Commit when you see fit
-And your key input is of course code + the at some point running orchestration system :D
 
+Commit when you see fit, keep local.
 You commit to local main branch only
 
 # How to verify
@@ -31,5 +33,5 @@ agent-browser cli for veryfing dashboard.
 
 # When you should stop?
 
-GOTCHAAA - FUCKING NEVER STOP there is ALWAYS MORE WORK
+GOTCHAAA - FUCKING NEVER STOP, there is ALWAYS MORE WORK
 
